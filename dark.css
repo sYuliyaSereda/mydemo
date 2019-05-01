@@ -1,0 +1,290 @@
+﻿body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 1vw/1.8 "Lato", sans-serif;
+  color: #777;
+  scroll-behavior: smooth;
+}
+.area-main{
+	color:white;
+	background-color:#262626;
+	text-align:center;
+	padding:4.59vh 3vw;
+	text-align: justify;
+}
+
+/*фоновые изображения*/
+.bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4, .bgimg-5{
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("bg2.jpg");
+  min-height: 100%;
+  height: auto;
+}
+
+.bgimg-2 {
+  background-image: url("bg2.jpg");
+  min-height: 40%;
+}
+
+.bgimg-3 {
+  background-image: url("bg2.jpg");
+  min-height: 40%;
+}
+.bgimg-4 {
+  background-image: url("bg2.jpg");
+  min-height: 40%;
+}
+}
+.bgimg-6 {
+  background-image: url("bg2.jpg");
+  min-height: 40%;
+.bgimg-7 {
+  background-image: url("bg2.jpg");
+  min-height: 40%;
+}
+}
+.bgimg-5 {
+  background-image: url("bg2.jpg");
+  min-height: 20%;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+/*создает белый квадрат, черный текст и какой то опцией их накладывает и выходит прозрачный вырез*/
+.caption span.border {
+  background-color: black;
+  color: black;
+  padding: 0.8vw;
+  font-size: 4vw;
+  letter-spacing: 0.6vw;
+}
+p {
+	color: white;
+}
+h3 {
+  letter-spacing: 0.2vw; /*расстояние между смиволами*/
+  text-transform: uppercase; /*заглавные буквы*/
+  font: 1.04vw "Lato", sans-serif; /*шрифт*/
+  color: white; /*измен цвета*/
+}
+h2 {
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  font: 1.25vw "Lato", sans-serif;
+  color: white;
+}
+h1 {
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  font: 1.875vw "Lato", sans-serif;
+  color: white;
+}
+
+@media only screen and (max-device-width: 53.33vw) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+  }
+}
+/*меню навигации*/
+.navbar {
+  overflow: hidden;
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.4vw 0.5vw;
+  text-decoration: none;
+  font-size: 1vw;
+}
+/*измен цвета по наведению мыши*/
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/*стиль оформления таблицы*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 0.09vw solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.4vw;
+}
+
+tr:nth-child(even) {
+  background-color: #595959
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 9vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 0 vw;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: multiply; /* This makes the cutout text possible */
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 0.1vh;
+}
+/*визитка*/
+.flip-card {
+  background-color: transparent;
+  width: 15.625vw;
+  height: 27.548209366391184vh;
+  perspective: 52vw;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 0.2vh 0.416vw 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #4d4d4d;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 72.9vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -2.02vh;
+  padding: 0.83vw;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9375vw;
+  transition: 0.6s ease;
+  border-radius: 0 0.15625vw 0.15625vw 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0.15625vw 0 0 0.15625vw;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size:  0.625vw;
+  padding: 0.734vh 0.625vw;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1.37vh;
+  width: 0.78125vw;
+  margin: 0 0.1vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

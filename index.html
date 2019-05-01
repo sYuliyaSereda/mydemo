@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="light.css">
+<script>
+  /* переключение стилей-оно в head находит тэг link, если его параметр href равен light css то поменять на dark.css и наоборот*/
+function myFunction() {
+    var oldlink = document.getElementsByTagName("link").item(0);
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+	if (oldlink.getAttribute("href") == "light.css"){ 
+    newlink.setAttribute("href", "dark.css");
+	} else {
+	newlink.setAttribute("href", "light.css");
+	}
+    document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
+</script>
+<script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.4.2.js"></script>
+</head>
+<body>
+
+<div id = "home" class="bgimg-1">
+
+
+ <div class="text">
+  САЙТ
+ </div>
+</div>
+
+<div class="area-main">
+  <h2 style="text-align:center;">Мое село</h2>
+ <p> Село в Украине, в Старосалтовском поселковой территориальной общине Волчанского района Харьковской области . Население составляет 1351 человека.Село Хотомля лежит на левом берегу Печенежского водохранилища (река Северский Донец ), на 2 км выше по течению от места впадения в него рек Хотомля и Хотомелька . У водохранилища несколько домов отдыха, на противоположном берегу большой лесной массив урочище Хотомлянська Дача (дуб). В село примыкает небольшой лесной массив (сосна).
+
+Расстояние от районного центра Волчанский составляет 36 км </p>
+  </div>
+
+<div class="bgimg-2">
+
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:2.6vw; color: #f7f7f7;">ТАБЛИЦА МОЕЙ УСПЕВАЕМОСТИ</span>
+  </div>
+</div>
+
+<div style="position:relative; overflow-x:auto;">
+  <div class="area-main">
+  <table>
+  <tr>
+    <th>Предмет</th>
+    <th>Преподаватель</th>
+    <th>Оценка</th>
+  </tr>
+  <tr>
+    <td>Технологии программирования</td>
+    <td>Дружинин Е.И.</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>ТАУ</td>
+    <td>Успенский</td>
+    <td>65</td>
+  </tr>
+  <tr>
+    <td>Моделирование сложных систем</td>
+    <td>Мартыненко В.Г.</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>Методы вычеслений</td>
+    <td>Плаксий</td>
+    <td>71</td>
+  </tr>
+ 
+  <tr>
+    <td>Компьютерные сети</td>
+    <td>Трубаев А.И.</td>
+    <td>84</td>
+  </tr>
+  <tr>
+    <td>ИАД</td>
+    <td>Мартыненко Г.Ю.</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>Физическое воспитание</td>
+    <td>Капустина Т</td>
+    <td>75</td>
+  </tr>
+</table>
+  </div>
+</div>
+
+<div class="bgimg-3">
+
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:2.6vw;color: #f7f7f7;">ГАЛЕРЕЯ МОЕГО НАСТРОЕНИЯ</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div class="area-main">
+  <div class="row">
+  <div class="column">
+    <img src="1.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="2.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="3.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
+ 
+  </div>
+</div>
+<div class="bgimg-3">
+
+
+  
+
+</div>
+  </div>
+
+<div class="bgimg-3">
+
+  <div class="caption">
+ 
+  </div>
+</div>
+<div style="position:relative;">
+  <div class="area-main">
+
+<!-- Контейнер для слайдшоу -->
+<div class="slideshow-container">
+
+  <!-- Полноформатные изображения с текстом номера и заголовка -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="img1.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="img2.jpg" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="img3.jpg" style="width:100%">
+    
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="img6.jpg" style="width:100%">
+    
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="img7.jpg" style="width:100%">
+    
+  </div>
+   <style>
+   a {
+    color: #000080; /* Цвет обычной ссылки */
+    padding: 2px; /* Поля вокруг текста */
+   }
+   a:visited {
+    color: #800080; /* Цвет посещенной ссылки */
+   } 
+   a:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */  
+    background: #e24486; /* Цвет фона */
+   }
+  </style>
+  <h3><a href="https://filmets.net/films/4744-kladbische-domashnih-zhivotnyh-300419.html">1. Кладбище домащних животных</a></h3>
+  <h3><a href="http://hdrezka.ag/series/thriller/1731-obmani-menya-2009.html">2.Обмани меня</a></h3>
+   <h3><a href="http://baskino.me/films/trillery/17292-pravda-ili-deystvie.html">3.Правда или действие</a></h3>
+   <h3><a href="https://filmets.net/serials/162-sotnya-smotret-onlain.html">4. Сотня</a></h3>
+   <h3><a href="https://filmets.net/multfilmi/3609-kak-priruchit-drakona-3-010519.html">5. Как приручить дракона</a></h3>
+   
+  
+  
+  <!-- Следующая и предыдущая кнопки -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<!-- Точки / круги -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+  </div>
+</div>
+<div class="bgimg-5">
+<div class="navbar">
+  <a href="#home">Главная</a>
+  <a href="#" onclick="myFunction()">Стиль</a>
+  <a href="#contact">Визитка</a>
+</div>
+<div style="position:relative;">
+<div style="text-align:center;padding:4.59vh 3vw;text-align: justify;">
+	<h1 style="text-align:center;"><b>Секрет того, чтобы добиться чего-то – начать. </b></h1>
+  <p><h2 style="text-align:center;padding:0vh 2.6vw;"><b>Марк твен</b></h2></p>
+</div>
+</div>
+</div>
+<div>
+  <div class="area-main">
+
+ <div id="contact" class="flip-card" style="margin:0 auto;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img5" alt="Avatar"  style="width:100%; height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Середа Юлия</h1> 
+      <p>03.07.1999</p> 
+      <p>julichka69s@gmail.com</p>
+    </div>
+  </div>
+</div>
+   </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";}
+</script>
+</body>
+</html>
